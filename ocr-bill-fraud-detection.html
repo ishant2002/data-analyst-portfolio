@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OCR-Based Bill Fraud Detection case study by Ishant Aggarwal, Freelance Data Analyst.">
+  <title>OCR-Based Bill Fraud Detection | Ishant Aggarwal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Ishant Aggarwal home">
+        <span class="brand-mark">IA</span>
+        <span><strong>Ishant Aggarwal</strong><small>Freelance Data Analyst</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small btn-primary" href="index.html#contact">Hire Me</a>
+    </header>
+
+    <main>
+      <section class="section case-hero">
+        <span class="eyebrow">AI-Assisted Fraud Analytics</span>
+        <h1>OCR-Based Bill Fraud Detection System</h1>
+        <p class="hero-subtitle">A document intelligence workflow for extracting invoice data, validating bill details, and flagging suspicious claims before payment approval.</p>
+        <figure class="case-visual glass-card">
+          <img src="assets/ocr-fraud-dashboard.svg" alt="OCR bill fraud detection dashboard visual">
+        </figure>
+        <div class="case-actions">
+          <a class="btn btn-primary" href="index.html#contact">Hire Me for Similar Work</a>
+          <a class="btn btn-secondary" href="index.html#projects">Back to Projects</a>
+        </div>
+      </section>
+
+      <section class="section case-layout">
+        <div class="case-main">
+          <article class="glass-card case-panel">
+            <h2>Project Overview</h2>
+            <p>This project was designed for finance and operations teams that process large volumes of vendor bills, reimbursement claims, or scanned invoices. Instead of manually reviewing each document, the system extracts important fields using OCR, standardizes the data, and applies validation checks to surface potential fraud indicators.</p>
+            <p>The final workflow acts like a first-level review layer: it does not replace human judgment, but it helps teams prioritize risky bills and reduce time spent checking low-risk documents.</p>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Business Problem</h2>
+            <p>Manual bill verification is slow, inconsistent, and difficult to audit. Finance teams often need to check vendor names, invoice numbers, dates, totals, tax values, duplicate bills, and unusual amount patterns across many files. When the process depends on spreadsheets and manual review, suspicious bills can be missed or discovered too late.</p>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Solution Built</h2>
+            <ul class="case-list">
+              <li>OCR extraction layer to read invoice number, vendor, bill date, amount, tax, and line-item details.</li>
+              <li>Data cleaning pipeline to standardize vendor names, currency values, date formats, and missing fields.</li>
+              <li>Fraud rules for duplicate invoice numbers, repeated amounts, weekend billing, unusual spikes, and vendor mismatch checks.</li>
+              <li>Risk scoring logic that assigns each bill a review priority based on combined anomaly signals.</li>
+              <li>Reviewer output file with extracted fields, validation results, risk level, and recommended action.</li>
+            </ul>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Advanced Workflow</h2>
+            <p>The system follows a staged pipeline: document intake, OCR extraction, field normalization, duplicate detection, vendor validation, anomaly scoring, and final reviewer output. Each stage is designed so finance users can trace why a bill was flagged instead of receiving a black-box result.</p>
+            <ul class="case-list">
+              <li>Confidence checks for extracted invoice fields to separate clean records from low-quality scans.</li>
+              <li>Vendor normalization logic to match spelling variations, abbreviations, and repeated supplier names.</li>
+              <li>Risk categories for duplicate invoice numbers, unusual amounts, mismatched tax values, and repeated billing patterns.</li>
+            </ul>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Result Metrics</h2>
+            <div class="result-grid">
+              <div><strong>60%+</strong><span>estimated reduction in manual review effort</span></div>
+              <div><strong>High</strong><span>priority tagging for suspicious invoices</span></div>
+              <div><strong>Audit</strong><span>friendly output with reason codes</span></div>
+            </div>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Business Impact</h2>
+            <p>The workflow helped reduce manual review time, improved consistency in fraud checks, and created a cleaner audit trail for every bill reviewed. It made suspicious bills easier to detect and helped finance teams focus attention where the risk was highest.</p>
+          </article>
+        </div>
+
+        <aside class="case-sidebar">
+          <div class="glass-card case-panel">
+            <h3>Tools Used</h3>
+            <div class="project-meta compact-tags">
+              <span>Python</span><span>OCR</span><span>Pandas</span><span>Excel</span><span>Validation Rules</span>
+            </div>
+          </div>
+          <div class="glass-card case-panel">
+            <h3>Deliverables</h3>
+            <ul class="case-list small-list">
+              <li>OCR extraction workflow</li>
+              <li>Fraud scoring rules</li>
+              <li>Clean review dataset</li>
+              <li>Exception report</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <a class="floating-cta" href="https://wa.me/919599318903" target="_blank" rel="noopener" aria-label="Contact Ishant on WhatsApp"><span>WhatsApp</span></a>
+  <script src="script.js"></script>
+</body>
+</html>

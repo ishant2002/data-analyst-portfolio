@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SQL-Based Data Reconciliation case study by Ishant Aggarwal, Freelance Data Analyst.">
+  <title>SQL-Based Data Reconciliation | Ishant Aggarwal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Ishant Aggarwal home">
+        <span class="brand-mark">IA</span>
+        <span><strong>Ishant Aggarwal</strong><small>Freelance Data Analyst</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Project navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small btn-primary" href="index.html#contact">Hire Me</a>
+    </header>
+
+    <main>
+      <section class="section case-hero">
+        <span class="eyebrow">Data Quality Engineering</span>
+        <h1>SQL-Based Data Reconciliation Project</h1>
+        <p class="hero-subtitle">A reconciliation framework for comparing records across systems, detecting mismatches, and improving trust in business reporting.</p>
+        <figure class="case-visual glass-card">
+          <img src="assets/sql-reconciliation.svg" alt="SQL data reconciliation workflow visual">
+        </figure>
+        <div class="case-actions">
+          <a class="btn btn-primary" href="index.html#contact">Hire Me for Similar Work</a>
+          <a class="btn btn-secondary" href="index.html#projects">Back to Projects</a>
+        </div>
+      </section>
+
+      <section class="section case-layout">
+        <div class="case-main">
+          <article class="glass-card case-panel">
+            <h2>Project Overview</h2>
+            <p>This project focused on finding differences between two or more business systems that should have contained matching transaction or customer records. The reconciliation layer used SQL checks to identify missing rows, duplicate records, amount mismatches, date mismatches, and status inconsistencies.</p>
+            <p>The result was a repeatable control process that could be used before reporting, month-end closing, or dashboard refreshes.</p>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Business Problem</h2>
+            <p>Reports are only useful when the underlying data is trusted. In many teams, CRM, ERP, payment, and spreadsheet records drift apart over time. Without a structured reconciliation process, stakeholders make decisions from incomplete or inconsistent numbers.</p>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Solution Built</h2>
+            <ul class="case-list">
+              <li>SQL matching logic using transaction IDs, invoice numbers, customer keys, dates, and amount fields.</li>
+              <li>Exception categories for missing records, duplicate records, field mismatches, and invalid statuses.</li>
+              <li>Summary tables showing mismatch counts, total value impacted, source system, and priority level.</li>
+              <li>Validation rules for null values, unexpected formats, duplicate keys, and out-of-range amounts.</li>
+              <li>Exportable exception report for business users to investigate and correct source data.</li>
+            </ul>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Reconciliation Logic</h2>
+            <p>The reconciliation process was designed as a repeatable control layer. Instead of checking only totals, it compared record-level keys, financial values, statuses, and timing differences so issues could be categorized and resolved faster.</p>
+            <ul class="case-list">
+              <li>Record matching across transaction IDs, invoice numbers, customer IDs, dates, and amount values.</li>
+              <li>Exception grouping for missing records, duplicate rows, amount differences, status mismatches, and invalid keys.</li>
+              <li>Summary output showing issue volume, financial exposure, responsible source system, and correction priority.</li>
+            </ul>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Result Metrics</h2>
+            <div class="result-grid">
+              <div><strong>Cleaner</strong><span>month-end reporting controls</span></div>
+              <div><strong>Fewer</strong><span>unexplained reporting mismatches</span></div>
+              <div><strong>Reusable</strong><span>SQL checks for future cycles</span></div>
+            </div>
+          </article>
+
+          <article class="glass-card case-panel">
+            <h2>Business Impact</h2>
+            <p>The reconciliation process strengthened reporting accuracy and made data issues visible before they reached dashboards or leadership reports. It also helped teams reduce repeated manual checks and establish a more reliable monthly control process.</p>
+          </article>
+        </div>
+
+        <aside class="case-sidebar">
+          <div class="glass-card case-panel">
+            <h3>Tools Used</h3>
+            <div class="project-meta compact-tags">
+              <span>SQL</span><span>BigQuery</span><span>Excel</span><span>Data Validation</span><span>Reconciliation Logic</span>
+            </div>
+          </div>
+          <div class="glass-card case-panel">
+            <h3>Deliverables</h3>
+            <ul class="case-list small-list">
+              <li>SQL validation scripts</li>
+              <li>Exception summary table</li>
+              <li>Mismatch reports</li>
+              <li>Data quality checks</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+  <a class="floating-cta" href="https://wa.me/919599318903" target="_blank" rel="noopener" aria-label="Contact Ishant on WhatsApp"><span>WhatsApp</span></a>
+  <script src="script.js"></script>
+</body>
+</html>
